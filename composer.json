@@ -1,0 +1,19 @@
+{
+    "name": "sune/scandiweb",
+    "description": "Scandiweb assignment project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Sunebari Jack",
+            "email": "44901635+sunejay@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Scandiweb\\": "./"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
