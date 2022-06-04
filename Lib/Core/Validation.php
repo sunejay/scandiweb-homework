@@ -53,6 +53,13 @@ class Validation extends RequestMethod
                         throw new \Exception("Model must be provided");
                     }
                 }
+
+                // Check numeric rule in the array
+                if ($key == "numeric" && $value == true) {
+                    if (!is_numeric($inputValue)) {
+                        $this->addError($field, "Please, provide the data of indicated type");
+                    }
+                }
             }
         }
         return $this;

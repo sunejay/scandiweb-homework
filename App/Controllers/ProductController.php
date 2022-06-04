@@ -32,7 +32,7 @@ class ProductController extends Controller
         $form->validate($req, [
             'sku' => ['required' => true, 'unique' => true, 'model' => Product::class],
             'name' => ['required' => true],
-            'price' => ['required' => true],
+            'price' => ['required' => true, 'numeric' => true],
             'type_switcher' => ['required' => true],
         ]);
         if ($form->isValidated()) {

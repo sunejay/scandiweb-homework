@@ -97,8 +97,8 @@ $(document).ready(function(){
 						      	<div class="invalid-feedback">${message}</div>`
 							);
 						} else {
-							$(`#${field}`).html(
-								`<input type="text" class="form-control is-invalid" name="${field}" placeholder="#${field}">
+							$(`#${field}01`).html(
+								`<input type="text" class="form-control is-invalid" name="${field}" id="${field}" placeholder="#${field}">
 						      	<div class="invalid-feedback">${message}</div>`
 							);
 						}

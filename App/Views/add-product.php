@@ -15,20 +15,20 @@
 				<form method="POST" action="/add-product" id="product_form">
 					<div class="mb-3 row">
 					    <label for="sku" class="col-sm-3 col-form-label">SKU</label>
-					    <div class="col-sm-9" id="sku">
-					      	<input type="text" class="form-control" name="sku" placeholder="#sku">
+					    <div class="col-sm-9" id="sku01">
+					      	<input type="text" class="form-control" name="sku" id="sku" placeholder="#sku">
 					    </div>
 				  	</div>
 				  	<div class="mb-3 row">
 					    <label class="col-sm-3 col-form-label">Name</label>
-					    <div class="col-sm-9" id="name">
-					      	<input type="text" class="form-control" name="name" placeholder="#name">
+					    <div class="col-sm-9" id="name01">
+					      	<input type="text" class="form-control" name="name" id="name" placeholder="#name">
 					    </div>
 				  	</div>
 				  	<div class="mb-3 row">
 					    <label class="col-sm-3 col-form-label">Price ($)</label>
-					    <div class="col-sm-9" id="price">
-					      	<input type="text" class="form-control" name="price" placeholder="#price">
+					    <div class="col-sm-9" id="price01">
+					      	<input type="text" class="form-control" name="price" id="price" placeholder="#price">
 					    </div>
 				  	</div>
 				  	<div class="mb-3 row">
