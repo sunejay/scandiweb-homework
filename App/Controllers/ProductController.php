@@ -21,8 +21,7 @@ class ProductController extends Controller
 
     public function addProductForm(Request $req, Response $res)
     {
-        $form = new Validation();
-        return $res->render('add-product', ['form' => $form]);
+        return $res->render('add-product');
     }
 
     public function addProduct(Request $req, Response $res)

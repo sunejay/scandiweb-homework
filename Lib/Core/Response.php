@@ -11,7 +11,6 @@ class Response
     private $status = 200;
     protected const ALERTS = ['info', 'success', 'warning', 'danger'];
 
-    // This method does the same as setStatusCode
     public function status(int $code) 
     {
         $this->status = $code;
@@ -30,11 +29,6 @@ class Response
         http_response_code($this->status);
         echo json_encode($data);
         exit;
-    }
-
-    public function setStatusCode(int $code)
-    {
-        http_response_code($code);
     }
 
     /**

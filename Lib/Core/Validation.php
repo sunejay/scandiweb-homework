@@ -6,21 +6,9 @@ namespace Scandiweb\Lib\Core;
  *
  * @author Sune
  */
-class Validation extends RequestMethod
+class Validation
 {
     public $errors = [];
-    
-    /**
-     * @param string $field form input value
-     * @return string
-     */
-    public function getInput(string $field)
-    {
-        if ($this->isPost()) {
-            $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
-            return htmlspecialchars(stripslashes(strip_tags(trim($_POST[$field]))));
-        } 
-    }
     
     /**
      * validations method

@@ -17,8 +17,7 @@ class Request
     }
 
     /**
-     * Get the REQUEST URI from the request, sanitized and 
-     * converted to lower case
+     * Get the REQUEST URI from the request
      * 
      * @return string 
      */

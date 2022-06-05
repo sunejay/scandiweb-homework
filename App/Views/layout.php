@@ -7,7 +7,19 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 </head>
 <body>
- 	<?= $content ?>
+	<nav class="navbar navbar-light mb-4">
+	  	<div class="container border-bottom border-light border-2 py-2">
+		    <a class="navbar-brand fw-bold"><?= $navbar_title ?></a>
+		    <div class="d-flex">
+		    	<?= $navbar_links ?>
+		    </div>
+	  	</div>
+	</nav>
+	<section class="container" style="min-height: 28em;">
+		<div class="row">
+			<?= $content ?>
+		</div>
+	</section>
 	<footer>
 		<div class="container text-center border-top border-light border-2 p-4 mt-4">
 			Scandiweb Test Assignment
