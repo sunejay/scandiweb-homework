@@ -86,9 +86,4 @@ abstract class Model
         $this->db->select($this->getTableName(), $where, $values, $fields, $order, $limit, $offset);
         return $this->db->single();
     }
-
-    public function rowCount()
-    {
-        return $this->db->rowCount();
-    }
 }

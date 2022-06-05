@@ -1,6 +1,8 @@
 <?php ob_start() ?>
-	<?php $title = 'Add Product' ?>
- 	<?php $navbar_title = 'Product Add' ?>
+	<?php 
+		$title = 'Add Product';
+	 	$navbar_title = 'Product Add';
+ 	?>
  	<?php ob_start() ?>
       	<a href="#" class="btn btn-outline-success btn-sm" id="product_save">Save</a>
       	<a href="/" class="btn btn-outline-success btn-sm ms-4">Cancel</a>
@@ -37,6 +39,7 @@
 			    </div>
 		  	</div>
 		  	<div class="rounded bg-secondary mb-3 p-3" id="selectedSwitch"> 
+		  		<p class="text-white fw-bold">Input for the selected type will appear here</p>
 		  	</div>
 		</form>
 	</div>

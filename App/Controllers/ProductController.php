@@ -41,7 +41,6 @@ class ProductController extends Controller
             $size = !empty($req->getInput('size')) ? 'Size: ' . $req->getInput('size') . ' MB' : null;
             $weight = !empty($req->getInput('weight')) ? 'Weight: ' . $req->getInput('weight') . 'KG' : null;
             $dimension = !empty($req->getInput('height')) && !empty($req->getInput('width')) && !empty($req->getInput('length')) ? 'Dimension: ' . $height.'x'.$width.'x'.$length : null;
-
             $type = $size ?? $dimension ?? $weight;
 
             $product->setSku($req->getInput('sku'));

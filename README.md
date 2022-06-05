@@ -1,3 +1,4 @@
 # scandiweb-homework
 Test PASSED!
-All Is Well
+All Is Well.
+This project was done with PHP MVC.

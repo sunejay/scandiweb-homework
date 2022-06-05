@@ -132,18 +132,4 @@ class Query
         $this->execute();
         return $this->result->fetch_assoc();
     }
-    /**
-     * Return result set as object
-     */
-    public function singleObj()
-    {
-        return $this->result->fetch_object();
-    }
-    /**
-     * Return row count
-     */
-    public function rowCount()
-    {
-        return $this->result->num_rows;
-    }
 }
